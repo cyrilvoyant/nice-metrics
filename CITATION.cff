@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "nice-metrics: NICE^k normalised forecast errors against persistence (MATLAB)"
+version: "1.0.0"
+date-released: "2026-10-22"
+license: MIT
+repository-code: "https://github.com/cyrilvoyant/nice-metrics"
+url: "https://cyrilvoyant.github.io/methods/nice-metrics.html"
+keywords:
+  - solar forecasting
+  - forecast evaluation
+  - error metrics
+  - persistence
+  - skill score
+  - NICE
+  - MATLAB
+authors:
+  - family-names: Voyant
+    given-names: Cyril
+    orcid: "https://orcid.org/0000-0003-0242-7377"
+    affiliation: "Mines Paris - PSL University, Centre O.I.E."
+preferred-citation:
+  type: article
+  title: "NICE k metrics: Unified and multidimensional framework for evaluating deterministic solar forecasting accuracy"
+  journal: "Sustainable Energy Technologies and Assessments"
+  volume: 83
+  start: 104588
+  year: 2025
+  doi: "10.1016/j.seta.2025.104588"
+  authors:
+    - family-names: Voyant
+      given-names: Cyril
+      orcid: "https://orcid.org/0000-0003-0242-7377"
+    - family-names: Despotovic
+      given-names: Milan
+      orcid: "https://orcid.org/0000-0003-3144-5945"
+    - family-names: Garcia-Gutierrez
+      given-names: Luis
+      orcid: "https://orcid.org/0000-0002-3480-1784"
+    - family-names: Amaro e Silva
+      given-names: Rodrigo
+      orcid: "https://orcid.org/0000-0002-2813-150X"
+    - family-names: Lauret
+      given-names: Philippe
+    - family-names: Soubdhan
+      given-names: Ted
+      orcid: "https://orcid.org/0000-0002-6402-8438"
+    - family-names: Bailek
+      given-names: Nadjem
+      orcid: "https://orcid.org/0000-0001-9051-8548"
