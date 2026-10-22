@@ -5,6 +5,14 @@ version: "1.0.0"
 date-released: "2026-10-22"
 license: MIT
 repository-code: "https://github.com/cyrilvoyant/nice-metrics"
+doi: "10.5281/zenodo.23562549"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23562549"
+    description: "Concept DOI (all versions, Zenodo)"
+  - type: doi
+    value: "10.5281/zenodo.23562550"
+    description: "Version DOI of v1.0.0 (Zenodo)"
 url: "https://cyrilvoyant.github.io/methods/nice-metrics.html"
 keywords:
   - solar forecasting

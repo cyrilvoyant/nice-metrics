@@ -1,5 +1,7 @@
 # nice-metrics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23562549.svg)](https://doi.org/10.5281/zenodo.23562549) (all versions; v1.0.0: [10.5281/zenodo.23562550](https://doi.org/10.5281/zenodo.23562550))
+
 **NICEᵏ: normalised forecast errors that say how much better a model is than persistence.**
 MATLAB code, a teaching demonstration with figures, and the scripts of the article:
 
