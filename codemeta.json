@@ -1,0 +1,83 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "nice-metrics: NICE^k normalised forecast errors against persistence (MATLAB)",
+  "description": "NICE^k: forecast errors normalised by persistence (MAE, RMSE, cubic). MATLAB functions, worked examples, figures and the scripts of the SETA 2025 article.",
+  "codeRepository": "https://github.com/cyrilvoyant/nice-metrics",
+  "url": "https://cyrilvoyant.github.io/methods/nice-metrics.html",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Cyril",
+      "familyName": "Voyant",
+      "@id": "https://orcid.org/0000-0003-0242-7377",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Mines Paris - PSL University, Centre O.I.E."
+      }
+    }
+  ],
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": [
+    "MATLAB"
+  ],
+  "keywords": [
+    "solar forecasting",
+    "forecast evaluation",
+    "error metrics",
+    "persistence",
+    "skill score",
+    "NICE",
+    "MATLAB"
+  ],
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "name": "NICE k metrics: Unified and multidimensional framework for evaluating deterministic solar forecasting accuracy",
+    "author": [
+      {
+        "@type": "Person",
+        "givenName": "Cyril",
+        "familyName": "Voyant",
+        "@id": "https://orcid.org/0000-0003-0242-7377"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Milan",
+        "familyName": "Despotovic",
+        "@id": "https://orcid.org/0000-0003-3144-5945"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Luis",
+        "familyName": "Garcia-Gutierrez",
+        "@id": "https://orcid.org/0000-0002-3480-1784"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Rodrigo",
+        "familyName": "Amaro e Silva",
+        "@id": "https://orcid.org/0000-0002-2813-150X"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Philippe",
+        "familyName": "Lauret"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Ted",
+        "familyName": "Soubdhan",
+        "@id": "https://orcid.org/0000-0002-6402-8438"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Nadjem",
+        "familyName": "Bailek",
+        "@id": "https://orcid.org/0000-0001-9051-8548"
+      }
+    ],
+    "url": "https://doi.org/10.1016/j.seta.2025.104588"
+  },
+  "readme": "https://github.com/cyrilvoyant/nice-metrics/blob/main/README.md",
+  "issueTracker": "https://github.com/cyrilvoyant/nice-metrics/issues"
+}
