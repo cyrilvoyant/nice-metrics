@@ -81,7 +81,7 @@ Example: σ = 300 W/m², ρ(1) = 0.9 → σ_D = 134.2 W/m², MAE ≈ 107.0, RMSE
 
 ### Note on Eq. (B.5) of the article
 
-Eq. (10) and Appendix B, Eqs. (B.5)–(B.7), of the article write the third absolute moment of a centred Gaussian variable as E|D|³ = (4√2/√π) σ_D³. The correct value is **E|D|³ = (2√2/√π) σ_D³ ≈ 1.596 σ_D³** (a simulation of four million Gaussian draws gives 1.596). With the printed factor, the theoretical RMCE of persistence is 2^(1/3) ≈ 1.26 times too large (197.5 instead of 156.8 W/m² in the example above), so the *theoretical* NICE³ is about 21 % too low.
+Eq. (10) and Appendix B, Eqs. (B.5)–(B.7), of the article (checked on the author version, arXiv:2508.01457v1) write the third absolute moment of a centred Gaussian variable as E|D|³ = (4√2/√π) σ_D³. The correct value is **E|D|³ = (2√2/√π) σ_D³ ≈ 1.596 σ_D³** (a simulation of four million Gaussian draws gives 1.596). With the printed factor, the theoretical RMCE of persistence is 2^(1/3) ≈ 1.26 times too large (197.5 instead of 156.8 W/m² in the example above), so the *theoretical* NICE³ is about 21 % too low.
 
 What this does **not** change: NICE¹, NICE², and every NICEᵏ computed from measured errors (the model's error divided by the measured error of persistence), which is how the metrics are used in practice. The code of this repository uses the correct constant; `nice_theory_persistence` also returns the value with the printed constant (`E3_article_constant`) for comparison. The original scripts in `paper_scripts/` are kept unchanged and still use the printed constant.
 
