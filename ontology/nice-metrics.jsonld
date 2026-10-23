@@ -1,0 +1,151 @@
+[
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#errorNorm",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Same physical unit as the input vectors; no universally fixed irradiance unit."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Model and reference error norms"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#software",
+    "@type": [
+      "https://schema.org/SoftwareSourceCode"
+    ],
+    "https://github.com/cyrilvoyant/nice-metrics#input": [
+      {
+        "@id": "https://github.com/cyrilvoyant/nice-metrics#y"
+      },
+      {
+        "@id": "https://github.com/cyrilvoyant/nice-metrics#y_hat"
+      },
+      {
+        "@id": "https://github.com/cyrilvoyant/nice-metrics#y_ref"
+      },
+      {
+        "@id": "https://github.com/cyrilvoyant/nice-metrics#weights"
+      }
+    ],
+    "https://github.com/cyrilvoyant/nice-metrics#output": [
+      {
+        "@id": "https://github.com/cyrilvoyant/nice-metrics#NICE"
+      },
+      {
+        "@id": "https://github.com/cyrilvoyant/nice-metrics#errorNorm"
+      }
+    ],
+    "https://schema.org/citation": [
+      {
+        "@id": "https://doi.org/10.1016/j.seta.2025.104588"
+      }
+    ],
+    "https://schema.org/codeRepository": [
+      {
+        "@id": "https://github.com/cyrilvoyant/nice-metrics"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://doi.org/10.5281/zenodo.23562549"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "nice-metrics"
+      }
+    ],
+    "https://schema.org/programmingLanguage": [
+      {
+        "@value": "MATLAB"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#weights",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Summary coefficients"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/UNITLESS"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#y",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Physical quantity and unit declared by caller."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Observed vector"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#y_ref",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Explicitly identified aligned reference, same physical unit as observations."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Reference vector"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#y_hat",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Same unit, horizon, timestamps and length as observed vector."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Forecast vector"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#NICE",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "NICE1, NICE2, NICE3 and NICE_Sigma"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/UNITLESS"
+      }
+    ]
+  }
+]

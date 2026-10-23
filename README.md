@@ -143,6 +143,10 @@ Requirements: MATLAB R2021a or later (base MATLAB only for `nice_metrics`, `nice
 - A complementary, tolerance-based score: [temporal-gamma-index](https://github.com/cyrilvoyant/temporal-gamma-index)
 - Persistence references beyond simple persistence (BLEND, CLIPER): [cyclostationary-forecasting-matlab](https://github.com/cyrilvoyant/cyclostationary-forecasting-matlab)
 
+## Machine-readable scientific documentation
+
+The [use contract](llm.md) documents units, reference alignment, assumptions and undefined cases. The [documentation descriptor](websemantic.json) is not a deployed WebSemantic adapter. Equivalent linked-data descriptions are available as [Turtle](ontology/nice-metrics.ttl) and [JSON-LD](ontology/nice-metrics.jsonld).
+
 ## Citation and license
 
 Please cite the article above (see `CITATION.cff`). Code under the MIT license.

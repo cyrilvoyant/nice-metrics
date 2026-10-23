@@ -1,0 +1,30 @@
+{
+  "schema_version": "nice-documentation-contract-1",
+  "integration_status": "documentation_only_not_registered_with_websemantic",
+  "software": {
+    "name": "nice-metrics",
+    "repository": "https://github.com/cyrilvoyant/nice-metrics",
+    "source_commit": "913c880a7d582d4a4365dd62a9b97e78f2ad359f",
+    "entry_point": "nice_metrics.m",
+    "runtime": "MATLAB",
+    "doi": "10.5281/zenodo.23562549",
+    "license": "MIT"
+  },
+  "inputs": {
+    "y": {"type": "real_numeric_vector", "required": true, "unit": "declared_by_caller"},
+    "y_hat": {"type": "real_numeric_vector", "required": true, "unit": "same_as_y"},
+    "y_ref": {"type": "real_numeric_vector", "required_for_unambiguous_agent_use": true, "required_by_code": false, "unit": "same_as_y", "code_default": "[NaN; y(1:end-1)]", "default_authority": "nice_metrics.m", "ask_before_using_default": true},
+    "weights": {"type": "three_real_coefficients", "required": false, "unit": "http://qudt.org/vocab/unit/UNITLESS", "code_default": [0.3333333333333333,0.3333333333333333,0.3333333333333333], "bounds": {"caller_recommendation_min": 0, "caller_recommendation_max": 1, "authority": "convex_summary_recommendation_not_enforced_by_code"}, "caller_recommendation": "finite, nonnegative, exactly three, sum to one"}
+  },
+  "context_required": ["physical_quantity", "physical_unit", "sampling_interval", "forecast_horizon", "reference_definition", "sample_mask"],
+  "constraints": ["equal vector lengths", "aligned timestamps and horizon", "same physical units", "reject infinity and complex values before use", "require at least one retained sample", "report zero reference norms as undefined ratios"],
+  "missing_data": "Joint exclusion where any input vector contains NaN; infinity is not filtered by the code.",
+  "outputs": {
+    "E1_model,E2_model,E3_model,E1_ref,E2_ref,E3_ref": {"unit": "same_as_y"},
+    "NICE1,NICE2,NICE3,NICE_Sigma": {"unit": "http://qudt.org/vocab/unit/UNITLESS"},
+    "n": {"type": "retained_sample_count", "unit": "http://qudt.org/vocab/unit/UNITLESS"}
+  },
+  "equations": ["E_k = mean(abs(observation - forecast)^k)^(1/k)", "NICE_k = E_k_model/E_k_ref", "NICE_Sigma = sum(weights * NICE_k)"],
+  "limits": ["No confidence interval or significance test", "No automatic prevention of temporal leakage", "No operational or clinical decision certification", "This descriptor is not executable validation"],
+  "article_doi": "10.1016/j.seta.2025.104588"
+}
