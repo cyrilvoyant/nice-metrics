@@ -1,5 +1,21 @@
 [
   {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#y",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Physical quantity and unit declared by caller."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Observed vector"
+      }
+    ]
+  },
+  {
     "@id": "https://github.com/cyrilvoyant/nice-metrics#errorNorm",
     "@type": [
       "https://schema.org/PropertyValue"
@@ -52,6 +68,11 @@
         "@id": "https://github.com/cyrilvoyant/nice-metrics"
       }
     ],
+    "https://schema.org/description": [
+      {
+        "@value": "NICE uses simple persistence at the same forecast horizon as its fixed reference, not an arbitrary benchmark."
+      }
+    ],
     "https://schema.org/identifier": [
       {
         "@id": "https://doi.org/10.5281/zenodo.23562549"
@@ -69,54 +90,6 @@
     ]
   },
   {
-    "@id": "https://github.com/cyrilvoyant/nice-metrics#weights",
-    "@type": [
-      "https://schema.org/PropertyValue"
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Summary coefficients"
-      }
-    ],
-    "https://schema.org/unitCode": [
-      {
-        "@id": "http://qudt.org/vocab/unit/UNITLESS"
-      }
-    ]
-  },
-  {
-    "@id": "https://github.com/cyrilvoyant/nice-metrics#y",
-    "@type": [
-      "https://schema.org/PropertyValue"
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "Physical quantity and unit declared by caller."
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Observed vector"
-      }
-    ]
-  },
-  {
-    "@id": "https://github.com/cyrilvoyant/nice-metrics#y_ref",
-    "@type": [
-      "https://schema.org/PropertyValue"
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "Explicitly identified aligned reference, same physical unit as observations."
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Reference vector"
-      }
-    ]
-  },
-  {
     "@id": "https://github.com/cyrilvoyant/nice-metrics#y_hat",
     "@type": [
       "https://schema.org/PropertyValue"
@@ -129,6 +102,38 @@
     "https://schema.org/name": [
       {
         "@value": "Forecast vector"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#y_ref",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Observation at target time minus forecast horizon, aligned on the same evaluation samples and physical unit. Other benchmarks do not define NICE."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Simple-persistence vector"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/cyrilvoyant/nice-metrics#weights",
+    "@type": [
+      "https://schema.org/PropertyValue"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Summary coefficients"
+      }
+    ],
+    "https://schema.org/unitCode": [
+      {
+        "@id": "http://qudt.org/vocab/unit/UNITLESS"
       }
     ]
   },

@@ -36,6 +36,8 @@ $$\mathrm{NICE}^k = \frac{E_k(\text{model})}{E_k(\text{persistence})}, \qquad \m
 
 Both errors are computed **on the same samples** (same dates, same horizon, same night filtering).
 
+**The reference is fixed: simple persistence at the forecast horizon**, meaning the observation at t is the forecast for t+h. Smart persistence, climatology and cyclic persistence may be models evaluated against it, but cannot replace the denominator while retaining the article's NICE definition. The utility's generic `y_ref` argument does not enforce this scientific requirement; callers must supply the aligned simple-persistence vector. Construct that vector before filtering evaluation samples. The article's [0,1] interpretation assumes a model no worse than persistence; values above one must be reported, not clipped (Section 2.1).
+
 The exponent k decides which errors matter:
 
 - **k = 1** (MAE) treats every error alike and is robust to a few outliers;
@@ -126,7 +128,7 @@ Note: in this demonstration the AR(1) coefficients are fitted on the whole serie
 
 | file | role |
 |---|---|
-| `nice_metrics.m` | NICE¹, NICE², NICE³ and NICE^Σ of any forecast against persistence or any reference |
+| `nice_metrics.m` | NICE¹, NICE², NICE³ and NICE^Σ against simple persistence at the same horizon; the generic reference input must follow this scientific constraint |
 | `nice_theory_persistence.m` | theoretical MAE, RMSE and RMCE of persistence from σ and ρ (correct Gaussian constant) |
 | `demo_nice.m` | the demonstration above; writes `results/*.csv` |
 | `make_figures.py` | draws `figures/` from the CSV files (numpy, pandas, matplotlib) |

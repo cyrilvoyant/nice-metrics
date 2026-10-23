@@ -6,13 +6,14 @@ cv:software a schema:SoftwareSourceCode ;
   schema:name "nice-metrics" ;
   schema:codeRepository <https://github.com/cyrilvoyant/nice-metrics> ;
   schema:programmingLanguage "MATLAB" ;
+  schema:description "NICE uses simple persistence at the same forecast horizon as its fixed reference, not an arbitrary benchmark." ;
   schema:citation <https://doi.org/10.1016/j.seta.2025.104588> ;
   schema:identifier <https://doi.org/10.5281/zenodo.23562549> ;
   cv:input cv:y, cv:y_hat, cv:y_ref, cv:weights ;
   cv:output cv:NICE, cv:errorNorm .
 cv:y a schema:PropertyValue ; schema:name "Observed vector" ; schema:description "Physical quantity and unit declared by caller." .
 cv:y_hat a schema:PropertyValue ; schema:name "Forecast vector" ; schema:description "Same unit, horizon, timestamps and length as observed vector." .
-cv:y_ref a schema:PropertyValue ; schema:name "Reference vector" ; schema:description "Explicitly identified aligned reference, same physical unit as observations." .
+cv:y_ref a schema:PropertyValue ; schema:name "Simple-persistence vector" ; schema:description "Observation at target time minus forecast horizon, aligned on the same evaluation samples and physical unit. Other benchmarks do not define NICE." .
 cv:weights a schema:PropertyValue ; schema:name "Summary coefficients" ; schema:unitCode unit:UNITLESS .
 cv:NICE a schema:PropertyValue ; schema:name "NICE1, NICE2, NICE3 and NICE_Sigma" ; schema:unitCode unit:UNITLESS .
 cv:errorNorm a schema:PropertyValue ; schema:name "Model and reference error norms" ; schema:description "Same physical unit as the input vectors; no universally fixed irradiance unit." .
