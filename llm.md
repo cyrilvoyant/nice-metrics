@@ -46,4 +46,4 @@ These are synthetic teaching irradiances in W/m², not field validation data. Ex
 
 Article: C. Voyant, M. Despotovic, L. Garcia-Gutierrez, R. Amaro e Silva, P. Lauret, T. Soubdhan and N. Bailek, *NICEᵏ metrics: Unified and multidimensional framework for evaluating deterministic solar forecasting accuracy*, Sustainable Energy Technologies and Assessments 83 (2025), 104588. https://doi.org/10.1016/j.seta.2025.104588
 
-Software concept DOI: https://doi.org/10.5281/zenodo.23562549 ; archived v1.0.0: https://doi.org/10.5281/zenodo.23562550 . Documentation added after that release is not automatically part of its archive. Cite the exact software commit or release used. License: MIT.
+Software concept DOI: https://doi.org/10.5281/zenodo.23562549 ; archived v1.0.1: https://doi.org/10.5281/zenodo.23875016 . Documentation added after that release is not automatically part of its archive. Cite the exact software commit or release used. License: MIT.

@@ -11,8 +11,8 @@ identifiers:
     value: "10.5281/zenodo.23562549"
     description: "Concept DOI (all versions, Zenodo)"
   - type: doi
-    value: "10.5281/zenodo.23562550"
-    description: "Version DOI of v1.0.0 (Zenodo)"
+    value: "10.5281/zenodo.23875016"
+    description: "Version DOI of v1.0.1 (Zenodo)"
 url: "https://cyrilvoyant.github.io/methods/nice-metrics.html"
 keywords:
   - solar forecasting
