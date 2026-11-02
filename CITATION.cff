@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the article below."
 title: "nice-metrics: NICE^k normalised forecast errors against persistence (MATLAB)"
-version: "1.0.0"
-date-released: "2026-10-22"
+version: "1.0.1"
+date-released: "2026-11-02"
 license: MIT
 repository-code: "https://github.com/cyrilvoyant/nice-metrics"
 doi: "10.5281/zenodo.23562549"
